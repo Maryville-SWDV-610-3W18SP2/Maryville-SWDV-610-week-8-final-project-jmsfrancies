@@ -7,12 +7,14 @@ def logic(firstName,lastName):
    a = input("Enter a fourth capital letter: ")
    win = GraphWin("Logic, Logic, Logic!",700,500)
    win.setBackground("Yellow")
-   Slogan = Text(Point(350,150),"""Hello, {0} {1}!
-Enjoy Learning some Logic. The (=>) conditional if then,
-statement. The '&' the conjunction, and the 'v' Disjunction symbol.
+   Slogan = Text(Point(350,250),"""Hello, {0} {1}!
+Enjoy Learning some Logic.
+The (=>) conditional if then, statement.
+The '&' the conjunction, and the 'v'
+Disjunction symbol.
 ENJOY!""".format(firstName,lastName))
    Slogan.setTextColor("black")
-   Slogan.setSize(16)
+   Slogan.setSize(22)
    Slogan.draw(win)
    win.getMouse()
    win.getMouse()
