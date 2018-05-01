@@ -1,16 +1,23 @@
 from graphics import *
-def logic():
-   print() 
-   print("Welcome to the Land of Logic! ")
+def logic(firstName,lastName):
    print()
    x = input("Enter a capital letter: ")
    y = input("Enter a second capital letter: ")
    z = input("Enter a third capital letter: ")
    a = input("Enter a fourth capital letter: ")
    win = GraphWin("Logic, Logic, Logic!",700,500)
-   win.getMouse()
-   win.getMouse()
    win.setBackground("Yellow")
+   Slogan = Text(Point(350,150),"""Hello, {0} {1}!
+Enjoy Learning some Logic. The (=>) conditional if then,
+statement. The '&' the conjunction, and the 'v' Disjunction symbol.
+ENJOY!""".format(firstName,lastName))
+   Slogan.setTextColor("black")
+   Slogan.setSize(16)
+   Slogan.draw(win)
+   win.getMouse()
+   win.getMouse()
+   win.getMouse()
+   Slogan.undraw()
    Slogan = Text(Point(350,150),"Ready or Not, Here comes some Logic!")
    Slogan.setTextColor("blue")
    Slogan.setSize(28)
@@ -140,7 +147,7 @@ password is: {3}""".format(firstName,lastName,username,password))
         enter1 = input("Enter UserName: ")
         enter2 = input("Enter Password: ")
         if enter1 == username and enter2 == password:
-           logic()
+           logic(firstName,lastName)
            break
         else:
            print("Enter a valid username and password: ")
